@@ -1,0 +1,349 @@
+import { StyleSheet, Dimensions } from 'react-native';
+
+const { width } = Dimensions.get('window');
+
+export default StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f5f5f5',
+  },
+  header: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    backgroundColor: '#fff',
+    borderBottomWidth: 1,
+    borderBottomColor: '#e5e5e5',
+  },
+  headerButton: {
+    width: 40,
+    height: 40,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  headerIcon: {
+    fontSize: 24,
+    color: '#333',
+  },
+  headerIconDisabled: {
+    color: '#ccc',
+  },
+  headerCenter: {
+    alignItems: 'center',
+  },
+  headerTitle: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: '#333',
+  },
+  headerSubtitle: {
+    fontSize: 14,
+    color: '#666',
+    marginTop: 2,
+  },
+  progressContainer: {
+    paddingHorizontal: 16,
+    paddingVertical: 8,
+    backgroundColor: '#fff',
+  },
+  progressBar: {
+    height: 6,
+    backgroundColor: '#e5e5e5',
+    borderRadius: 3,
+    overflow: 'hidden',
+  },
+  progressFill: {
+    height: '100%',
+    backgroundColor: '#3b82f6',
+    borderRadius: 3,
+  },
+  stepIndicator: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 20,
+    paddingVertical: 20,
+    backgroundColor: '#fff',
+  },
+  stepItem: {
+    flex: 1,
+    alignItems: 'center',
+    position: 'relative',
+  },
+  stepCircle: {
+    width: 40,
+    height: 40,
+    borderRadius: 20,
+    backgroundColor: '#e5e5e5',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  stepCircleActive: {
+    backgroundColor: '#3b82f6',
+  },
+  stepCircleCompleted: {
+    backgroundColor: '#10b981',
+  },
+  stepIcon: {
+    fontSize: 20,
+    color: '#999',
+  },
+  stepIconActive: {
+    color: '#fff',
+  },
+  stepLabel: {
+    fontSize: 12,
+    color: '#666',
+    marginTop: 8,
+  },
+  stepLabelActive: {
+    color: '#3b82f6',
+    fontWeight: '600',
+  },
+  stepLine: {
+    position: 'absolute',
+    top: 20,
+    left: '50%',
+    right: '-50%',
+    height: 2,
+    backgroundColor: '#e5e5e5',
+  },
+  stepLineCompleted: {
+    backgroundColor: '#10b981',
+  },
+  content: {
+    flex: 1,
+    padding: 16,
+  },
+  card: {
+    backgroundColor: '#fff',
+    borderRadius: 12,
+    padding: 16,
+    marginBottom: 16,
+  },
+  cardHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: 20,
+  },
+  cardIcon: {
+    fontSize: 24,
+    marginRight: 8,
+  },
+  cardTitle: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: '#333',
+  },
+  cardContent: {
+    gap: 16,
+  },
+  inputContainer: {
+    marginBottom: 16,
+  },
+  label: {
+    fontSize: 16,
+    fontWeight: '500',
+    color: '#333',
+    marginBottom: 8,
+  },
+  required: {
+    color: '#dc2626',
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#e5e5e5',
+    borderRadius: 8,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    fontSize: 16,
+    color: '#333',
+    backgroundColor: '#fff',
+  },
+  textArea: {
+    height: 120,
+    textAlignVertical: 'top',
+  },
+  inputError: {
+    borderColor: '#dc2626',
+  },
+  errorContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginTop: 4,
+  },
+  errorIcon: {
+    fontSize: 12,
+    marginRight: 4,
+  },
+  errorText: {
+    fontSize: 12,
+    color: '#dc2626',
+  },
+  radioGroup: {
+    flexDirection: 'row',
+    gap: 24,
+  },
+  radioOption: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginRight: 24,
+  },
+  radio: {
+    width: 20,
+    height: 20,
+    borderRadius: 10,
+    borderWidth: 2,
+    borderColor: '#3b82f6',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 8,
+  },
+  radioSelected: {
+    width: 10,
+    height: 10,
+    borderRadius: 5,
+    backgroundColor: '#3b82f6',
+  },
+  radioLabel: {
+    fontSize: 16,
+    color: '#333',
+  },
+  picker: {
+    borderWidth: 1,
+    borderColor: '#e5e5e5',
+    borderRadius: 8,
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: '#fff',
+  },
+  pickerText: {
+    fontSize: 16,
+    color: '#333',
+  },
+  placeholderText: {
+    color: '#999',
+  },
+  pickerIcon: {
+    fontSize: 12,
+    color: '#666',
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    justifyContent: 'flex-end',
+  },
+  pickerModal: {
+    backgroundColor: '#fff',
+    borderTopLeftRadius: 20,
+    borderTopRightRadius: 20,
+    maxHeight: '50%',
+  },
+  pickerHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: '#e5e5e5',
+  },
+  pickerTitle: {
+    fontSize: 18,
+    fontWeight: '600',
+    color: '#333',
+  },
+  closeIcon: {
+    fontSize: 20,
+    color: '#333',
+  },
+  pickerOption: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    paddingVertical: 16,
+    paddingHorizontal: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: '#f5f5f5',
+  },
+  pickerOptionText: {
+    fontSize: 16,
+    color: '#333',
+  },
+  checkIcon: {
+    fontSize: 18,
+    color: '#3b82f6',
+  },
+  bottomButtons: {
+    flexDirection: 'row',
+    gap: 12,
+    padding: 16,
+    backgroundColor: '#fff',
+    borderTopWidth: 1,
+    borderTopColor: '#e5e5e5',
+  },
+  button: {
+    flex: 1,
+    paddingVertical: 14,
+    borderRadius: 8,
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'row',
+    gap: 8,
+  },
+  buttonPrimary: {
+    backgroundColor: '#3b82f6',
+  },
+  buttonPrimaryText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#fff',
+  },
+  buttonIcon: {
+    fontSize: 18,
+  },
+  buttonOutline: {
+    backgroundColor: '#fff',
+    borderWidth: 1,
+    borderColor: '#e5e5e5',
+  },
+  buttonOutlineText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#333',
+  },
+  buttonDisabled: {
+    backgroundColor: '#e5e5e5',
+  },
+  successModal: {
+    backgroundColor: '#fff',
+    margin: 20,
+    borderRadius: 16,
+    padding: 24,
+    alignItems: 'center',
+  },
+  successIconLarge: {
+    fontSize: 60,
+    marginBottom: 16,
+  },
+  successTitle: {
+    fontSize: 20,
+    fontWeight: '600',
+    color: '#333',
+    marginBottom: 8,
+  },
+  successMessage: {
+    fontSize: 16,
+    color: '#666',
+    textAlign: 'center',
+    marginBottom: 24,
+    lineHeight: 22,
+  },
+  modalButtons: {
+    width: '100%',
+    gap: 12,
+  },
+});
