@@ -234,14 +234,18 @@ export default StyleSheet.create({
   },
   modalOverlay: {
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-    justifyContent: 'flex-end',
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   pickerModal: {
+    width: '100%',
     backgroundColor: '#fff',
     borderTopLeftRadius: 20,
     borderTopRightRadius: 20,
     maxHeight: '50%',
+    position: 'absolute',
+    bottom: 0,
   },
   pickerHeader: {
     flexDirection: 'row',
@@ -258,7 +262,7 @@ export default StyleSheet.create({
   },
   closeIcon: {
     fontSize: 20,
-    color: '#333',
+    color: '#666',
   },
   pickerOption: {
     flexDirection: 'row',
@@ -318,32 +322,90 @@ export default StyleSheet.create({
   buttonDisabled: {
     backgroundColor: '#e5e5e5',
   },
-  successModal: {
-    backgroundColor: '#fff',
-    margin: 20,
-    borderRadius: 16,
-    padding: 24,
+  previewModal: {
+    width: '90%',
+    maxHeight: '85%',
+    backgroundColor: 'white',
+    borderRadius: 20,
+    overflow: 'hidden',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.25,
+    shadowRadius: 10,
+    elevation: 10,
+  },
+  previewHeader: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
     alignItems: 'center',
+    padding: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: '#f0f0f0',
+    backgroundColor: '#f8f9fa',
   },
-  successIconLarge: {
-    fontSize: 60,
-    marginBottom: 16,
-  },
-  successTitle: {
+  previewTitle: {
     fontSize: 20,
-    fontWeight: '600',
+    fontWeight: '700',
     color: '#333',
-    marginBottom: 8,
+    marginLeft: 5,
   },
-  successMessage: {
-    fontSize: 16,
-    color: '#666',
-    textAlign: 'center',
-    marginBottom: 24,
+  previewContent: {
+    paddingHorizontal: 20,
+    paddingVertical: 10,
+    backgroundColor: '#fff',
+  },
+  previewRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    paddingVertical: 14,
+    borderBottomWidth: 0.5,
+    borderBottomColor: '#f0f0f0',
+  },
+  previewLabel: {
+    fontSize: 15,
+    fontWeight: '600',
+    color: '#555',
+    flex: 1,
+    marginRight: 10,
+  },
+  previewValue: {
+    fontSize: 15,
+    color: '#333',
+    flex: 2,
+    textAlign: 'right',
     lineHeight: 22,
   },
-  modalButtons: {
-    width: '100%',
-    gap: 12,
+  modalBottomButtons: {
+    flexDirection: 'row',
+    padding: 10,
+    borderTopWidth: 1,
+    borderTopColor: '#f0f0f0',
+  },
+  modalButton: {
+    flex: 1,
+    paddingVertical: 14,
+    borderRadius: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginHorizontal: 5,
+  },
+  editButton: {
+    backgroundColor: '#fff',
+    borderWidth: 1,
+    borderColor: '#ccc',
+  },
+  editButtonText: {
+    color: '#333',
+    fontSize: 16,
+    fontWeight: '600',
+  },
+  saveButton: {
+    backgroundColor: '#3b82f6',
+  },
+  saveButtonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: '600',
   },
 });
