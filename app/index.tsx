@@ -1,6 +1,6 @@
-import React from 'react';
-import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView } from 'react-native';
 import { useRouter } from 'expo-router';
+import React from 'react';
+import { SafeAreaView, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 
 export default function MainScreen() {
   const router = useRouter();
@@ -9,13 +9,20 @@ export default function MainScreen() {
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
         <Text style={styles.title}>🎉 환영합니다!</Text>
-        <Text style={styles.subtitle}>이력서 작성을 시작해보세요.</Text>
+        <Text style={styles.subtitle}>원하는 메뉴를 선택해주세요.</Text>
         
-        <TouchableOpacity 
+        <TouchableOpacity
           style={styles.button}
-          onPress={() => router.push({ pathname: '/resume' } as any)} // as any로 타입 문제 해결
+          onPress={() => router.push({ pathname: '/resume' } as any)}
         >
-          <Text style={styles.buttonText}>이력서 작성하기</Text>
+          <Text style={styles.buttonText}>📝 이력서 작성하기</Text>
+        </TouchableOpacity>
+
+        <TouchableOpacity
+          style={[styles.button, styles.secondaryButton]}
+          onPress={() => router.push({ pathname: '/job-posting' } as any)}
+        >
+          <Text style={styles.buttonText}>💼 채용공고 작성하기</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
@@ -48,6 +55,12 @@ const styles = StyleSheet.create({
     paddingVertical: 14,
     paddingHorizontal: 30,
     borderRadius: 10,
+    marginBottom: 15,
+    minWidth: 200,
+    alignItems: 'center',
+  },
+  secondaryButton: {
+    backgroundColor: '#10b981',
   },
   buttonText: {
     color: '#fff',

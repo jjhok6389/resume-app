@@ -12,6 +12,11 @@ export default function RootLayout() {
         name="resume"
         options={{ headerShown: false }}
       />
+      {/* 채용공고 작성 화면 설정 추가 */}
+      <Stack.Screen 
+        name="job-posting" 
+        options={{ headerShown: false }} 
+      />
       {/* ----- 아래 chat 화면 설정을 추가합니다 ----- */}
       <Stack.Screen
         name="chat"
